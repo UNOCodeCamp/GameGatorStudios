@@ -10,7 +10,7 @@ hud.drawText = function(text, x, y, align, size)
 {
 	// #Score
 	renderer.ctx.fillStyle = "rgb(250, 250, 250)"; //set to white
-	renderer.ctx.font =  size + "px Helvetica";  //set the font
+	renderer.ctx.font =  size + "42px Helvetica";  //set the font
 	renderer.ctx.textAlign = align; //set to left
 	renderer.ctx.textBaseline = "top"; //set to top
 	renderer.ctx.fillText(text, x, y); //set the contents
@@ -28,6 +28,4 @@ hud.drawGameOver = function()
 	renderer.ctx.textAlign = "center"; //set to left
 	renderer.ctx.textBaseline = "center"; //set to top
 	renderer.ctx.fillText("Game Over!", viewport.width/2, viewport.height/2); //set the contents
-
-	renderer.canvas.style="cursor: auto;";
 }
