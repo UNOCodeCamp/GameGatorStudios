@@ -1,12 +1,12 @@
 player = new Object();
 
-player.x = null;
-player.y = null;
+player.x = viewport.width/2;
+player.y = viewport.height/2;
 player.image = new Image();
-player.image.src = "";
-player.width = 32;
-player.height = 32;
-
+player.image.src = "assets/Game_Gator _Pure_Beauty.png";
+player.width = 96;
+player.height = 96;
+player.isAttacking = false
 
 player.draw = function()
 {
@@ -24,12 +24,12 @@ player.isTouching = function( gameObject )
 
 player.move = function(x, y)
 {
-	player.x = x;
-	player.y = y;
+	player.x = x - (player.height/ 2);
+	player.y = y - (player.width/ 2);
 }
 
 
 player.attack = function()
 {
-
+	player.isAttacking = true
 };

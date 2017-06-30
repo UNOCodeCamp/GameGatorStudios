@@ -2,6 +2,7 @@ renderer = new Object();
 
 // Create the canvas
 renderer.canvas = document.getElementById("viewport");
+
 renderer.ctx = renderer.canvas.getContext("2d");
 
 renderer.start = function()
